@@ -37,8 +37,16 @@
 # arr.reverse
 # puts arr.reverse!.to_s
 cars = ["Acura", "Audi", "Bentley", "Mersedes", "Sitroen", "Pegout", "Renault", "Ford", "Fiat", "Kia"]
-puts cars.length
+quontity = cars.length
 
-choice = gets.chomp
+puts "We have only " + quontity.to_s + " cars In our rental. Which one do you need?"
 
-puts choise
+choice = gets.to_i - 1
+
+if choice < cars.length && choice >= 0
+    puts "Congratulations, you have received: " + cars[choice] + "."
+
+  else
+    puts "Sorry, we do not have a car with this number: " + (choice + 1).to_s + "."
+  end
+  
