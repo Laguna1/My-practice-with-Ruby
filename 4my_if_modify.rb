@@ -8,11 +8,10 @@ puts "Your choice is incorrect"
 puts "1 - with Mama"
 puts "2 -  with Zozo"
 choice = gets.to_i
-
 end
 
 
-# choice = gets.chomp
+# choice = gets.chomp!!!! important format to_i? to_s?!!!
 
 if choice == 1
     abort "Mama is busy, sorry"
@@ -29,3 +28,5 @@ else
         abort "O, don`t want this sweety, I want a beautiful meat pie"
     end
 end
+
+puts "Nobody walk!"
