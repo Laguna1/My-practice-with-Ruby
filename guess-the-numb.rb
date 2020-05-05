@@ -37,7 +37,7 @@ else
     if computer_choice > user_choice
         puts "Your number is less, try again."
     else
-        puts "Your number is too bog, try again."
+        puts "Your number is too big, try again."
     end
 sleep 2
     if (computer_choice - user_choice).abs > 3
