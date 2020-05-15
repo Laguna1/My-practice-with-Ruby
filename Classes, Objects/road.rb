@@ -13,7 +13,11 @@ sleep 1
 
 bridge = Bridge.new
 sleep 1
-bridge.open_bridge
+
+if !bridge.bridge_opened?
+  bridge.open_bridge
+end
 sleep 1
+puts bridge.bridge_opened?.to_s
 
 puts "Good luck!"
